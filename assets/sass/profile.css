@@ -32,4 +32,25 @@
   text-align: left;
   padding-left: 35px;
   border: 1px solid #888888;
+}
+
+@media screen and (max-width: 980px) {
+  .table-area {
+    margin: 40px 20px;
+  }
+  .table-area .table {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #888888;
+  }
+  .table-area .table tr th {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #888888;
+  }
+  .table-area .table tr td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #888888;
+  }
 }/*# sourceMappingURL=profile.css.map */

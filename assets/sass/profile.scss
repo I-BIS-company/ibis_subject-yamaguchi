@@ -37,7 +37,32 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 980px){
+    .table-area{
+        margin: 40px 20px;
+        .table{
+            max-width: 800px;
+            margin: 0 auto;
     
+            border: 1px solid #888888;
+            tr{
+                th{
+                    text-align: left;
+                    padding: 15px;
+    
+                    border: 1px solid #888888;
+                }
+                td{
+                    text-align: left;
+                    padding: 15px;
+                 
+                    border: 1px solid #888888;
+                }
+            }
+        }
+    }
     
 
 }
