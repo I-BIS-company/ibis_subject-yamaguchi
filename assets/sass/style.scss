@@ -43,3 +43,27 @@ body{
     max-width: 1200px;
     margin: 70px auto 0;
 }
+
+@media screen and (max-width: 980px){
+    .mainVisual{
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    .head-ttl{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .contents-description{
+        font-size: 16px;
+    }
+    
+    .contents-inner{
+        max-width: 1200px;
+        margin: 40px auto 0;
+    }
+    
+
+}
