@@ -29,18 +29,18 @@
         </div>
     </section>
 
-    <section class="contents-inner">
+    <section class="contents-inner element">
         <h2 class="headline">ABOUT</h2>
             <p class="contents-description">このサイトは、山口愛介の自己紹介サイトです。<br>スキルやプロフィールなどを紹介しています。</p>
     </section>
 
-    <section class="contents-inner">
+    <section class="contents-inner element">
         <h2 class="headline">SKILL</h2>
             <p class="contents-description">私は今まで、HTML、CSS、SASS、JavaScript、<br>Git、Ruby、Illustrator、Photoshopなどを<br>勉強してきました。</p>
     </section>
 
     <div class="bImage"></div>
-    <section class="contents-inner">
+    <section class="contents-inner element">
         <h2 class="headline">PROFILE</h2>
         
         <div class="flexContainer">
@@ -70,5 +70,20 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            const windowHeight = $(window).height();
+            const scroll = $(window).scrollTop();
+
+            $('.element').each(function () {
+            const targetPosition = $(this).offset().top;
+            if (scroll > targetPosition - windowHeight + 100) {
+                $(this).addClass("is-fadein");
+            }
+            });
+        });
+    });
+</script>
 </body>
 </html>
