@@ -65,3 +65,24 @@
 
 }
 
+.btn{
+    max-width: 240px;
+    height: 60px;
+    background-color: #81B3EE;
+    border-radius: 5px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+
+        display: block;
+        &:hover{
+            opacity: .5;
+        }
+    }
+}
