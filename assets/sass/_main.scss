@@ -28,3 +28,14 @@
         display: none;
     }
 }
+
+/ コンテンツ大枠
+
+.headline{
+    @extend .head-ttl;
+    .description{
+        @extend .contents-description;//なぜ効かない？
+    }
+}
+
+
