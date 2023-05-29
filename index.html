@@ -4,56 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>portfolio/HOME</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/sass/style.css">
+    <link rel="stylesheet" href="./assets/sass/profile.css">
+
 </head>
 <body>
-    <header>
-        <nav class="header_nav">
-            <ul class="header_navList">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PROFILE</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <div class="mainVisual">
-                <h1>山口愛介の自己紹介サイト</h1>
-                <img src="./assets/images/pc_mainVisual.jpg" alt="メインビジュアル">
-            </div>
-        </section>
-        <section>
-            <h2 class="headline">ABOUT</h2>
-                <p class="description">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
-        </section>
-        <section>
-            <h2 class="headline">SKILL</h2>
-                <p class="description">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
-        </section>
-    
-        <div class="bImage"></div>
-        <section>
-            <h2 class="headline">PROFILE</h2>
-            
-                <p class="description">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
-    
-            <div class="btn">
-                <a href="#">プロフィールを見る</a>
-            </div>
-        </section>
-    </main>
+<header>
+<nav class="header_nav">
+    <ul class="header_navList">
+        <li><a href="#">HOME</a></li>
+        <li><a href="./profile/index.html">PROFILE</a></li>
+    </ul>
+</nav>
+</header>
 
-    <footer>
-        <h3>山口愛介の自己紹介サイト</h3>
-            <nav>
-                <ul>
-                    <li><a href=""></a>HOME</li>
-                    <li><a href="">PROFILE</a></li>
-                </ul>
-            </nav>
-    </footer>
+<main>
+    <section class="mainVisual-color">
+        <div class="mainVisual">
+            <h1>山口愛介の自己紹介サイト</h1>
+            <img class="pc-img" src="./assets/images/pc_mainVisual.jpg" alt="PC用メインビジュアル">
+            <img class="sp-img" src="./assets/images/sp_mainVisual.jpg" alt="SP用メインビジュアル">
+        </div>
+    </section>
+
+    <section class="contents-inner">
+        <h2 class="headline">ABOUT</h2>
+            <p class="contents-description">このサイトは、山口愛介の自己紹介サイトです。<br>スキルやプロフィールなどを紹介しています。</p>
+    </section>
+
+    <section class="contents-inner">
+        <h2 class="headline">SKILL</h2>
+            <p class="contents-description">私は今まで、HTML、CSS、SASS、JavaScript、<br>Git、Ruby、Illustrator、Photoshopなどを<br>勉強してきました。</p>
+    </section>
+
+    <div class="bImage"></div>
+    <section class="contents-inner">
+        <h2 class="headline">PROFILE</h2>
+        
+        <div class="flexContainer">
+            <div class="image-area">
+                <img src="./assets/images/profileImage.jpg" alt="プロフィールイメージ">
+            </div>
+            <div class="profile-info">
+                <p class="contents-description">私のプロフィールをご紹介します。</p>
+
+                <div class="btn">
+                    <a href="./profile/index.html">プロフィールを見る</a>
+                </div>
+            </div><!-- profile-info -->
+        </div><!-- flexContainer -->
+    </section>
+
+</main>
+
+<footer>
+    <h3>山口愛介の自己紹介サイト</h3>
+    <nav class="footer_nav">
+        <ul class="footer_navList">
+            <li><a href="#">HOME</a></li>
+            <li><a href="/profile/index.html">PROFILE</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
