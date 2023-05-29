@@ -5,4 +5,31 @@
 .under-mainVisual img {
   width: 100%;
   height: auto;
+}
+
+.table-area {
+  margin: 70px 200px;
+}
+.table-area .table {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #888888;
+}
+.table-area .table tr th {
+  width: 245px;
+  font-family: Hiragino Kaku Gothic ProN;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  padding: 15px 0 15px 35px;
+  border: 1px solid #888888;
+}
+.table-area .table tr td {
+  width: 483px;
+  font-family: Hiragino Kaku Gothic ProN;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 35px;
+  border: 1px solid #888888;
 }/*# sourceMappingURL=profile.css.map */
