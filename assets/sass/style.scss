@@ -22,3 +22,24 @@ body{
     font-family: 'Hiragino Kaku Gothic ProN', serif,sans-serif;
     
 }
+
+.head-ttl{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:HelveticaNeue;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.contents-description{
+    font-size: 20px;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.contents-inner{
+    max-width: 1200px;
+    margin: 70px auto 0;
+}
