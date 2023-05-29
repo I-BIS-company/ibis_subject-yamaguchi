@@ -104,6 +104,32 @@ header .header_nav .header_navList a:hover {
     opacity: 0.5;
   }
 }
+.mainVisual-color {
+  background-color: rgba(129, 179, 238, 0.18);
+}
+
+.mainVisual {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.mainVisual h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Hiragino Kaku Gothic ProN;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainVisual .pc-img {
+  width: 100%;
+}
+.mainVisual .sp-img {
+  display: none;
+}
+
 a {
   color: #000;
   text-decoration: none;
