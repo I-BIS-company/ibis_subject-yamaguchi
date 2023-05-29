@@ -31,3 +31,37 @@ footer{
     }
     
 }
+
+@media screen and (max-width: 980px){
+    footer{
+        height: 158px;
+        h3{
+            max-width: 1200px;
+            margin: 24px 0 0 25px; 
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            padding-top: 24px;
+        }
+        .footer_nav{
+            margin: 24px 0 0 25px;
+            text-align: left;
+            .footer_navList{
+                li{
+                    margin-top: 20px;
+                    a{
+                        display: block;
+                        font-size: 16px;
+                        font-weight: bold;
+                        &:hover{
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+
+}
