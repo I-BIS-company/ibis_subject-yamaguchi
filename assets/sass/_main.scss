@@ -28,8 +28,7 @@
         display: none;
     }
 }
-
-/ コンテンツ大枠
+// コンテンツ大枠
 
 .headline{
     @extend .head-ttl;
@@ -38,4 +37,31 @@
     }
 }
 
+
+// Profileエリア
+
+.flexContainer{
+    max-width: 800px;
+    margin: 0 auto 124px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border: 1px solid #000;
+    .image-area{
+        // margin: 0 auto;
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+    .profile-info{
+        margin: 0 auto;
+        p{
+            padding-bottom: 50px;
+        }
+    }
+
+}
 
