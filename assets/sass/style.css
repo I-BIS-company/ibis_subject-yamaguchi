@@ -327,4 +327,16 @@ body {
     max-width: 1200px;
     margin: 40px auto 0;
   }
+}
+.element {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.is-fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

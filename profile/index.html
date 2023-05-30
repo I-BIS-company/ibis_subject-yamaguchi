@@ -27,11 +27,11 @@
         </div>
     </section>
 
-    <section class="contents-inner">
+    <section class="contents-inner element">
         <h2 class="headline">PROFILE</h2>
         <p class="contents-description">このページでは、私のプロフィールを<br>紹介いたします。</p>
 
-        <div class="table-area">
+        <div class="table-area element">
             <table class="table">
                 <tr>
                     <th>名前</th>
@@ -64,5 +64,22 @@
         </ul>
     </nav>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            const windowHeight = $(window).height();
+            const scroll = $(window).scrollTop();
+
+            $('.element').each(function () {
+            const targetPosition = $(this).offset().top;
+            if (scroll > targetPosition - windowHeight + 100) {
+                $(this).addClass("is-fadein");
+            }
+            });
+        });
+    });
+</script>
 </body>
 </html>
