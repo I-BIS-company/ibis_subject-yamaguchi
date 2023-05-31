@@ -6,7 +6,7 @@ $(function () {
         $('.element').each(function () {
         const targetPosition = $(this).offset().top;
         if (scroll > targetPosition - windowHeight + 100) {
-            $(this).addClass("is-fadein");
+            $(this).addClass("isFadein");
         }
         });
     });
