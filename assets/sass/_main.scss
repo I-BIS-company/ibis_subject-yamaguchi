@@ -1,5 +1,5 @@
 // メインビジュアル
-.mainVisual-color{
+.mainVisualColor{
     background-color: rgba(129, 179, 238, .18);
 }
 
@@ -20,20 +20,22 @@
         transform: translate(-50%,-50%);
         
     }
-    .pc-img{
+    .pcImg{
         width: 100%;
         // height: 100vh;
+        object-fit: cover;
     }
-    .sp-img{
+    .spImg{
         display: none;
+        object-fit: cover
     }
 }
 // コンテンツ大枠
 
 .headline{
-    @extend .head-ttl;
+    @extend .headTtl;
     .description{
-        @extend .contents-description;//なぜ効かない？
+        @extend .contentsDescription;//なぜ効かない？
     }
 }
 
@@ -49,14 +51,15 @@
     flex-wrap: wrap;
 
     border: 1px solid #000;
-    .image-area{
+    .imageArea{
         // margin: 0 auto;
         img{
             width: 400px;
             height: 400px;
+            object-fit: cover;
         }
     }
-    .profile-info{
+    .profileInfo{
         margin: 0 auto;
         p{
             padding-bottom: 50px;
@@ -94,13 +97,14 @@
         h1{
             font-size: 20px;
         }
-        .pc-img{
+        .pcImg{
             display: none;
         }
-        .sp-img{
+        .spImg{
             display: block;
             height: 100vh;
             width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -114,15 +118,15 @@
         flex-wrap: wrap;
     
         border: none;
-        .image-area{
+        .imageArea{
             margin: 0 auto;
             min-width: 375px;
             img{
                 width: 100%;
-                
+                object-fit: cover;
             }
         }
-        .profile-info{
+        .profileInfo{
             margin: 0 auto;
             p{
                 padding:20px 0;

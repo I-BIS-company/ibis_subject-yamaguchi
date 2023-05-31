@@ -2,11 +2,11 @@
 header{
     background: #81B3EE;
     height: 60px;
-    .header_nav{
+    .headerNav{
         max-width: 1200px;
         padding: 0 40px;
         margin: 0 auto;
-        .header_navList{
+        .headerNav_list{
             display: flex;
             align-items: center;
             height: 60px;
@@ -27,11 +27,11 @@ header{
 
 @media screen and (max-width: 980px){
     header{
-        .header_nav{
+        .headerNav{
             max-width: 1200px;
             padding: 0 40px;
             margin-right: auto;
-            .header_navList{
+            .headerNav_list{
                 display: flex;
                 align-items: center;
                 height: 60px;

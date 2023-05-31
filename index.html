@@ -7,13 +7,16 @@
     <title>portfolio/HOME</title>
 
     <link rel="stylesheet" href="./assets/sass/style.css">
-    <link rel="stylesheet" href="./assets/sass/profile.css">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 
 </head>
 <body>
 <header>
-<nav class="header_nav">
-    <ul class="header_navList">
+<nav class="headerNav">
+    <ul class="headerNav_list">
         <li><a href="#">HOME</a></li>
         <li><a href="./profile/index.html">PROFILE</a></li>
     </ul>
@@ -21,34 +24,34 @@
 </header>
 
 <main>
-    <section class="mainVisual-color">
+    <section class="mainVisualColor">
         <div class="mainVisual">
             <h1>山口愛介の自己紹介サイト</h1>
-            <img class="pc-img" src="./assets/images/pc_mainVisual.jpg" alt="PC用メインビジュアル">
-            <img class="sp-img" src="./assets/images/sp_mainVisual.jpg" alt="SP用メインビジュアル">
+            <img class="pcImg" src="./assets/images/pc_mainVisual.jpg" alt="PC用メインビジュアル">
+            <img class="spImg" src="./assets/images/sp_mainVisual.jpg" alt="SP用メインビジュアル">
         </div>
     </section>
 
-    <section class="contents-inner element">
+    <section class="contentsInner element">
         <h2 class="headline">ABOUT</h2>
-            <p class="contents-description">このサイトは、山口愛介の自己紹介サイトです。<br>スキルやプロフィールなどを紹介しています。</p>
+            <p class="contentsDescription">このサイトは、山口愛介の自己紹介サイトです。<br>スキルやプロフィールなどを紹介しています。</p>
     </section>
 
-    <section class="contents-inner element">
+    <section class="contentsInner element">
         <h2 class="headline">SKILL</h2>
-            <p class="contents-description">私は今まで、HTML、CSS、SASS、JavaScript、<br>Git、Ruby、Illustrator、Photoshopなどを<br>勉強してきました。</p>
+            <p class="contentsDescription">私は今まで、HTML、CSS、SASS、JavaScript、<br>Git、Ruby、Illustrator、Photoshopなどを<br>勉強してきました。</p>
     </section>
 
     <div class="bImage"></div>
-    <section class="contents-inner element">
+    <section class="contentsInner element">
         <h2 class="headline">PROFILE</h2>
         
         <div class="flexContainer">
-            <div class="image-area">
+            <div class="imageArea">
                 <img src="./assets/images/profileImage.jpg" alt="プロフィールイメージ">
             </div>
-            <div class="profile-info">
-                <p class="contents-description">私のプロフィールをご紹介します。</p>
+            <div class="profileInfo">
+                <p class="contentsDescription">私のプロフィールをご紹介します。</p>
 
                 <div class="btn">
                     <a href="./profile/index.html">プロフィールを見る</a>
@@ -61,29 +64,12 @@
 
 <footer>
     <h3>山口愛介の自己紹介サイト</h3>
-    <nav class="footer_nav">
-        <ul class="footer_navList">
+    <nav class="footerNav">
+        <ul class="footerNav_list">
             <li><a href="#">HOME</a></li>
             <li><a href="/profile/index.html">PROFILE</a></li>
         </ul>
     </nav>
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script>
-    $(function () {
-        $(window).scroll(function () {
-            const windowHeight = $(window).height();
-            const scroll = $(window).scrollTop();
-
-            $('.element').each(function () {
-            const targetPosition = $(this).offset().top;
-            if (scroll > targetPosition - windowHeight + 100) {
-                $(this).addClass("is-fadein");
-            }
-            });
-        });
-    });
-</script>
 </body>
 </html>

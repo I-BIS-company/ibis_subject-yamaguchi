@@ -1,0 +1,76 @@
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+// * {outline: 1px solid magenta;}
+
+body{
+    margin: 0;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    font-family: 'Hiragino Kaku Gothic ProN', serif,sans-serif;
+    
+}
+
+.headTtl{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:HelveticaNeue;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.contentsDescription{
+    font-size: 20px;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.contentsInner{
+    max-width: 1200px;
+    margin: 70px auto 0;
+}
+
+@media screen and (max-width: 980px){
+    .mainVisual{
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    .headTtl{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .contentsDescription{
+        font-size: 16px;
+    }
+    
+    .contentInner{
+        max-width: 1200px;
+        margin: 40px auto 0;
+        padding: 0 20px;
+    }
+    
+
+}
+
+.element {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .isFadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
